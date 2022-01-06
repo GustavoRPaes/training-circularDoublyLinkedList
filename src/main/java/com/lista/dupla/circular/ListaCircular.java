@@ -23,6 +23,7 @@ public class ListaCircular<T> {
             this.cabeca.setNoProximo(novoNo);
             this.cauda = novoNo;
         }
+        this.tamanhoLista++;
     }
 
     public void remove(int index){
@@ -83,6 +84,7 @@ public class ListaCircular<T> {
         }
 
         strRetorno += this.size() != 0 ? "(Retorna ao inicio)" : "[]";
+
         return strRetorno;
     }
 }
